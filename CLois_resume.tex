@@ -3,6 +3,8 @@
 \usepackage{natbib}
 \usepackage{eurosym}
 \usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
 \hypersetup{pdftitle={CristinaLoisResume},
   colorlinks=true,
   linkcolor=blue,
@@ -22,7 +24,11 @@
 \setlength{\textwidth}{15cm}
 \setlength{\textheight}{22cm}
 
-\pagestyle{empty}
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{Cristina Lois}
+\renewcommand\headrulewidth{0pt}
+\cfoot{\thepage~of~\pageref{LastPage}}
 
 \setlength{\unitlength}{1cm}
 
@@ -42,90 +48,77 @@
 \def\bloque#1{\vspace{.0cm}\begin{large} \textbf{#1}\end{large} \blinha}
 %\def\bloque#1{\vspace{.5cm}\begin{large} \textbf{#1}\end{large} \blinha}
 
-\def\nome#1{\begin{center} \begin{Large}\textbf{#1}\end{Large}\end{center}\vspace{0.3cm}}
+\def\nome#1{\begin{center} \begin{Large}\textbf{#1}\end{Large}\end{center}}
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
 \begin{document}
 
-\nome{\textsc{Cristina Lois G\'omez}}
+\nome{\textsc{Cristina Lois}}
 
-% includes postal address
-\begin{minipage}[t]{0.6\textwidth}
+\begin{center}
+16.5 Suffolk Street, Cambridge, MA 02139 (USA) \enskip \textbullet \enskip
+%Massachusetts Institute of Technology\\
+%Research Laboratory of Electronics, 
+%Room 36-705 \\
+%77 Massachusetts Ave.\\
+%Cambridge, MA 02139-4307  (USA)\\
++1(617)-319-3615 \enskip \textbullet \enskip \href{mailto:clois@mit.edu}{\texttt{clois@mit.edu}}
+\end{center}
 
-Massachusetts Institute of Technology\\
-Research Laboratory of Electronics, 
-Room 36-705 \\
-77 Massachusetts Ave.\\
-Cambridge, MA 02139-4307  (USA)\\
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.26\textwidth}
-    \vfill
-\raggedright phone: +1(617)-319-3615 \\
-\raggedright email: \href{mailto:clois@mit.edu}{\texttt{clois@mit.edu}}\\
-\raggedright web: \href{http://bit.ly/crislois}{\texttt{bit.ly/crislois}}\\
-\end{minipage}
-
-%%\begin{description}
-%\vspace*{-0.6cm}
-%\begin{center}
-%%\hspace*{2.5cm}
-%\end{center}
-%%\end{description}
-%\vspace{.5cm}\
 \bloque{Summary}
-9 years of experience in Biomedical Imaging, covering a wide range of topics from detector development to clinical applications. Proven track record of successful management, innovation, and impact in bioengineering. Proven ability to work in a team environment on multi-disciplinary, international projects, as well as independently. Proven communication skills.  
+9 years of experience in Biomedical Imaging, covering a wide range of topics from detector development to clinical applications. Broad expertise in PET/CT, PET/MRI, and SPECT, with clinical exposure and technical expertise in image processing and quantification.
+Proven track record of successful management, innovation, and impact in bioengineering. Proven ability to work in a team environment on multi-disciplinary, international projects, as well as independently. %Proven communication skills.  
 
 %Highly interested in the application of physics to advance in the diagnose and treatment of human disease.  First-rate interpersonal skills 
-
-
 
 \vspace{.5cm}
 \bloque{Professional Experience}
 \begin{description}
 
-\item[] \textbf{Harvard Medical School \& Massachusetts General Hospital } \hfill Boston, MA
-    \\
+\item[] \textbf{Harvard Medical School \& Massachusetts General Hospital } \hfill Boston, MA\\
 Research Fellow in Radiology \hfill \textit{Jul. 2015--present} 
-\\
+\vspace*{-0.2cm}
 \begin{itemize}
-\vspace*{-3.0ex}
- \item Applied PET/MR imaging to search for markers of disease and progression in Huntington's Disease. This is being used in a clinical trial to test new treatments.
- 
- \item Worked on multi-modal human neuroimaging to explore and develop new concepts in healthy and diseased brain function.
+%\vspace*{-3.0ex}
+ \item Responsible of PET/MR imaging analysis in a clinical study to search for markers of disease and progression in Huntington's Disease. %This is being used in a clinical trial to test new treatments.
+ \item Using PET/MR neuroimaging to explore and develop new concepts in healthy and diseased brain function.
+ \item Collaborating with a multi-disciplinary team of radiochemists, neuroscientists, and clinical physicians.
+  
 \end{itemize}
 
-\item[] \textbf{Massachusetts Institute of Technology} \hfill Cambridge, MA
-    \\
-``M+Vision'' Research Fellow \hfill \textit{Jul. 2012--June 2015} 
-\\
-\begin{itemize}
-\vspace*{-3.0ex}
-\item Intensive training on identifying unmet clinical needs and design
+\item[] \textbf{Massachusetts Institute of Technology} \hfill Cambridge, MA \\
+``M+Vision'' Research Fellow in Translational Biomedical Imaging \hfill \textit{Jul. 2012--June 2015} 
+\vspace*{-0.2cm}
+\begin{itemize} 
+\item Intensive training on identifying unmet clinical needs and designing
     solutions with high translational potential and marketability.
- \item Investigated the biological basis of the placebo effect in depression
-     using PET/MR imaging.
-\item Worked on the development of a new PET tracer for early assessment of treatment response in
-melanoma patients. Received a \$283K grant as co-PI to develop this project. 
+ \item Conducted interviews with key opinion leaders in oncology, neurology, psychiatry, and radiology.
+ \item Responsible of PET/MR imaging in a clinical study to investigate the biological basis of the placebo effect in depression.
+\item Built and co-managed an international team of radiochemists, biologists, engineers, and physicians, working on the development of a new PET tracer for early assessment of treatment response in melanoma patients. 
+\item Received \$283K in internal grant funding. 
+\item Co-organized and taught a MIT IAP course on Biomedical Imaging.
 \end{itemize}
 
 \item[]
     \textbf{Hospital Clinic Barcelona} \hfill Barcelona, Spain 
 \\
-Visiting Researcher \hfill  \textit{Jan. 2012-- Jun. 2012}
-
-Evaluated dual-time point PET for prediction of treatment response in lung
+Postdoctoral Research Associate \hfill  \textit{Jan. 2012-- Jun. 2012}
+\vspace*{-0.2cm}
+\begin{itemize}
+\item Evaluated the value of dual-time-point PET for prediction of treatment response in lung
 cancer patients.
+\end{itemize}
 
-\item[]
-    \textbf{Imaging Science Institute} \hfill T\"ubingen, Germany 
-\\
-Visiting Researcher \hfill  \textit{Feb. 2011-- Jul. 2011} 
-
-Analyzed the effect of MRI contrast agents on PET quantification for PET/MRI
-applications, and demonstrated how to avoid potential artifacts that could impact clinical decisions.
-
+\item[] \textbf{Imaging Science Institute of T\"ubingen} \hfill T\"ubingen, Germany \\
+Visiting Scientist \hfill  \textit{Feb. 2011-- Jul. 2011} 
+\vspace*{-0.2cm}
+\begin{itemize}
+\item Analyzed the effect of MRI contrast agents on PET quantification for PET/MRI
+applications and demonstrated how to avoid potential artifacts that could impact clinical decisions.
+\item Evaluated artifacts caused by dental implants in PET/CT and PET/MR imaging.
+\item Worked in a highly collaborative multi-disciplinary team of physicians, MR and PET physicists, and computer engineers.  
+\end{itemize}
 %\item[]
 %    \textbf{Hospital Clinic Barcelona} \hfill Barcelona, Spain 
 %\\
@@ -134,148 +127,116 @@ applications, and demonstrated how to avoid potential artifacts that could impac
 %Compared the performance of GATE \& PeneloPET in simulating a microPET
 %scanner.
 
-\item[]
-    \textbf{University of Santiago de Compostela} \hfill Santiago de
-    Compostela, Spain
-\\
+\item[] \textbf{University of Santiago de Compostela} \hfill Santiago de Compostela, Spain\\
     ``\'Angeles Alvari\~no'' Fellow \hfill \textit{Dec. 2008--Dec 2011}
-\vspace*{0.5ex}
-    \\
-    Designed and built an affordable preclinical SPECT system by reusing a
-    clinical gamma-camera. Recipient of a 60K \euro~grant as PI to carry out
-    the project. Supervised a graduate student. 
-    
-    %and a postdoc.
+    \vspace*{-0.2cm}
+   \begin{itemize} 
+   \item Designed and built an affordable preclinical SPECT system by reusing a clinical gamma-camera. 
+    \item Received 60K \euro~in competitive, public grant funding as PI. 
+    \item Led a multi-disciplinary team of physicists, nuclear medicine physicians, and mechanical engineers.
+    \item Trained and supervised a graduate student and a postdoc. 
+    \item Responsible of designing and teaching one undergraduate laboratory course and two graduate courses.  
+   \end{itemize} 
+ %  \newpage
 
-%\item[]
- %   \textbf{University of Santiago de Compostela} \hfill Santiago de
-  %  Compostela, Spain
-%\\
-   % Postdoctoral Research Assistant \hfill \textit{Sep. 2008--Dec 2008}
-%\vspace*{0.5ex}
-  %  \\
-   % Worked on PET and SPECT instrumentation. 
-
-\item[]
-    \textbf{University of Tennessee Medical Center} \hfill Knoxville, TN
-\\
+\item[] \textbf{University of Tennessee Medical Center} \hfill Knoxville, TN \\
 Postdoctoral Research Associate \hfill \textit{Feb. 2007-- Jul. 2008} 
-\vspace*{0.5ex}
-\\
-Demonstrated the benefits of incorporating time-of-flight information in PET/CT
-by carrying out a study on a large population of 100 oncology patients. Published
-two highly cited papers, one chosen as cover in \textit{Journal of Nuclear Medicine}.
-
-\item[]
-    \textbf{University of Santiago de Compostela} \hfill Santiago de
-    Compostela, Spain
-\\
+ \vspace*{-0.2cm}
+ \begin{itemize} 
+ \item Working in collaboration with Siemens, demonstrated the benefits of incorporating time-of-flight information in PET/CT by carrying out a study on a large population of 100 oncology patients. 
+\item Published two highly cited papers, one chosen as cover in \textit{Journal of Nuclear Medicine}.
+ \end{itemize} 
+ 
+\item[] \textbf{University of Santiago de Compostela} \hfill Santiago de Compostela, Spain\\
     Postdoctoral Research Assistant \hfill \textit{Sep. 2006--Jan 2007}
-\vspace*{0.5ex}
-    \\
-    Measured the neutron fluency in a linear accelerator to estimate its
+\vspace*{-0.2cm}
+\begin{itemize}
+  \item  Measured the neutron fluency in a linear accelerator to estimate its
     contribution to the radiation dose in radiotherapy patients.
+ \end{itemize} 
 
-%\newpage 
-\item[]
-    \textbf{University of Z\"urich} \hfill Z\"urich, Switzerland
-     \\
-    \&
-\item[]
-\vspace*{-2.5ex}
-    \textbf{University of Santiago de Compostela} \hfill Santiago de
-    Compostela, Spain
-\\
-    Research \& Teaching Assistant \hfill \textit{Sep. 2002--Jun. 2006}
-\vspace*{0.5ex}
-    \\
-    Contributed to the design and development, and carried out performance studies
-    of the silicon microstrip detectors installed in the Silicon Tracker of the
-    LHCb experiment at CERN.
+\item[] \textbf{University of Z\"urich} \hfill Z\"urich, Switzerland \\
+ \&
+\item[] \vspace*{-2.5ex} \textbf{University of Santiago de Compostela} \hfill Santiago de Compostela, Spain\\
+    Research \& Teaching Assistant \hfill \textit{Sep. 2001--Jun. 2006}
+\vspace*{-0.2cm}
+\begin{itemize}
+\item   Contributed to the design and development and carried out performance studies of the silicon microstrip detectors installed in the Silicon Tracker of the LHCb experiment at CERN.
+\item Trained and supervised undergraduate students. 
+\end{itemize} 
 \end{description}
 
 \vspace*{2.5ex}
 \bloque{Education}
 \begin{description}
-    \item[] \textbf{PhD in Physics}, with European Doctorate \hfill
-        \textit{Oct. 2001 - May 2006}\\
-    University of Santiago de Compostela \hfill Santiago de
-    Compostela, Spain 
-    \item[] \textbf{MSc in Particle Physics \& Non-linear Dynamics} \hfill \textit{Oct. 2001 - Sep. 2003}
-        \\
-    University of Santiago de Compostela \hfill Santiago de
-    Compostela, Spain 
+    \item[] \textbf{PhD in Physics}, with European Doctorate mention \hfill \textit{Oct. 2001 - May 2006}\\
+    University of Santiago de Compostela \hfill Santiago de Compostela, Spain 
+    
+    \item[] \textbf{MSc in Particle Physics \& Non-linear Dynamics} \hfill \textit{Oct. 2001 - Sep. 2003}\\
+    University of Santiago de Compostela \hfill Santiago de Compostela, Spain 
+    
     \item[] \textbf{BSc in Physics} \hfill \textit{Oct. 1995 - Sept. 2001} \\
-    University of Santiago de Compostela \hfill Santiago de
-    Compostela, Spain
+    University of Santiago de Compostela \hfill Santiago de Compostela, Spain
    \end{description} 
 
 \vspace*{2.5ex}
 \bloque{Leadership service}
 \begin{description}
 
-\item Chair of the `` PET imaging'' session at the 2011 IEEE Nuclear Science Symposium and Medical Imaging Conference, Valencia, Spain.
+\item Chair of the ``PET imaging'' session at the 2011 IEEE Nuclear Science Symposium and Medical Imaging Conference, Valencia, Spain.
 
 \item Referee for  {\em Medical Physics}, {\em Physics in Medicine and Biology}, and {\em Zeitschrift f\"ur Medizinische Physik}.
 
-\item  Management Committee Member to \href{http://www.pet-mri.eu}{EU COST
-    Action TD1007} for "Bimodal PET-MRI molecular imaging technologies and applications for in vivo monitoring of disease and biological processes".
+\item  Management Committee Member to \href{http://www.cost.eu/COST_Actions/mpns/TD1007}{EU COST Action TD1007} for "Bimodal PET-MRI molecular imaging technologies and applications for in vivo monitoring of disease and biological processes".
 
-\item Reviewer for the Instituto de Salud Carlos III Grants 2015, in the modality of Technological Developments for Health Applications (AES 2015).
+\item Grant reviewer for the Instituto de Salud Carlos III (Spain), in the modality of Technological Developments for Health Applications (AES 2015).
 
 \end{description}
-
-\vspace*{2.5ex}
 
 \bloque{Skills}
 \begin{itemize}
 
-\item Imaging techniques: (TOF)-PET/CT, SPECT, and PET/MR.
- 
-\item Radioactive Facilities Supervisor License, Spanish Nuclear Safety Council, 2009.  
+\item Imaging techniques: (TOF)-PET/CT, PET/MR, and SPECT.
 
+\item Image processing software: FreeSurfer, SPM, PMOD, Amide, and FSL.
+ 
 \item Experience in international, large-scale R\&D environments. 
 
 \item Experience working in multi-disciplinary teams with members from academia, industry, and clinics.
 
-\item Principal Investigator in 3 research grants
-    and collaborator in other 11 grants and contracts with industry.
+\item Principal Investigator in 3 research grants and collaborator in other 11 grants and contracts with industry.
 
-\item Authored +60 scientific publications, and delivered +20 invited talks and conference presentations.
+\item Authored 60+ scientific publications and delivered 20+ invited talks and conference presentations.
 
-\item Languages: Native Spanish, Native Galician, good English, and basic German.
+\item Radioactive Facilities Supervisor License, Spanish Nuclear Safety Council, 2009.  
+
+\item Languages: Native Spanish, native Galician, native competence in English, and basic German.
 
 \end{itemize}
 
 
-\bloque{Awards}
+\bloque{Honors \& Awards}
 \begin{description}
 
-\item[] M+Vision Fellowship\\
-Madrid-MIT M+Vision Consortium \hfill \textit{Jul. 2012} 
+\item[] M+Vision Advanced Fellowship (declined), Madrid-MIT M+Vision Consortium  \hfill \textit{Aug. 2013}
 
+\item[] M+Vision Fellowship, Madrid-MIT M+Vision Consortium   \hfill \textit{Jul. 2012}\\
     Ranked 2nd among more than 100 applicants.
-\item[] ``Best Oral Presentation in Nuclear Medicine''\\
-    Spanish Nuclear Society Annual Meeting \hfill\textit{Oct. 2010}
-
+    
+\item[] ``Best Oral Presentation in Nuclear Medicine'', Spanish Nuclear Society Annual Meeting \hfill\textit{Oct. 2010}
+     
 \item[] Front cover of the Journal of Nuclear Medicine, Vol. 50 \hfill \textit{Aug. 2009} \\
     Featuring results on ``Impact of Time-of-Flight on PET Tumor Detection''.
 
-\item[] Jos\'e Castillejo Fellowship\\
-Ministerio de Educaci\'on y Ciencia, Spain \hfill \textit{Sep. 2007--Jun. 2008}
+\item[] Jos\'e Castillejo Fellowship, Ministerio de Educaci\'on y Ciencia, Spain \hfill \textit{Sep. 2007--Jun. 2008}
 
-\item[] \'Angeles Alvari\~no Fellowship\\
-    Xunta de Galicia, Spain \hfill \textit{Dec. 2008--Dec. 2011}
-
+\item[] \'Angeles Alvari\~no Fellowship, Xunta de Galicia, Spain \hfill \textit{Dec. 2008--Dec. 2011}\\
     Ranked 2nd among more than 200 applicants.
 
-\item[] Predoctoral research grant\\
-    Universidad de Santiago de Compostela, Spain \hfill 
-    \textit{ Oct. 2005--May 2006}\\
-    Excma. Diputaci\'on Provincial de A Coru\~na, Spain \hfill 
-    \textit{Jul. 2003--Jul. 2004}\\
-	Excma. Diputaci\'on Provincial de A Coru\~na, Spain \hfill
-    \textit{Jul. 2002--Jul. 2003}\\
+\item[] Predoctoral research grants\\
+    Universidad de Santiago de Compostela, Spain \hfill  \textit{ Oct. 2005--May 2006}\\
+    Excma. Diputaci\'on Provincial de A Coru\~na, Spain \hfill \textit{Jul. 2003--Jul. 2004}\\
+    Excma. Diputaci\'on Provincial de A Coru\~na, Spain \hfill \textit{Jul. 2002--Jul. 2003}
 
 \end{description}
 
@@ -283,25 +244,30 @@ Ministerio de Educaci\'on y Ciencia, Spain \hfill \textit{Sep. 2007--Jun. 2008}
 \textit{See also my Google Scholar profile at}
 \href{http://bit.ly/cloispubs}{\texttt{bit.ly/cloispubs}}.
 
-
 \begin{itemize} 
 
-     \item P. Aguiar  {\em et al.}, ``A portable device for small animal SPECT imaging in clinical gamma-cameras'', \textit{JINST} \textbf{9} P07004 (2014).
+ \item  F. D. Popota, P. Aguiar, S. Espa\~na, \textbf{C. Lois}, J. M. Udias, D. Ros, J. Pavia, J. D. Gispert, "Monte Carlo simulations versus experimental measurements in a small animal PET system. A comparison in the NEMA NU 4-2008 framework ", Physics in Medicine and Biology 60 (1), 151 (2015). 
+   
+ \item P. Aguiar, J. Silva-Rodriguez, D. M. Gonzalez-Castano, F. Pino, M. Sanchez, M. Herranz, A. Iglesias, \textbf{C. Lois}, A. Ruibal, ``A portable device for small animal SPECT imaging in clinical gamma-cameras'', \textit{JINST} \textbf{9} P07004 (2014).
 
-    \item C. Lois {\em et al.}, ``Effect of MR contrast agents on quantitative
+\item \textbf{C. Lois}, I. Bezrukov, H. Schmidt, N. Schwenzer, M.~K. Werner, J. Kupferschläger, T. Beyer ``Effect of MR contrast agents on quantitative
         accuracy of PET in combined whole-body PET/MR imaging'', \textit{Eur. J.
         Nucl. Med.}, \textbf{39}, 1756 (2012).
 
-    \item C. Lois {\em et al.}, ``An assessment of the impact of incorporating
+\item P. Aguiar and \textbf{C. Lois}, ``Analytical study of the effect of the system geometry on photon sensitivity and depth of interaction of positron emission mammography", Journal of Oncology (2012).
+
+\item \textbf{C. Lois}, B.~W. Jakoby, M.~J. Long, K.~F. Hubner, D.~W. Barker, M.~E. Casey, M. Conti, V.~Y. Panin, D.~J. Kadrmas, D.~W Townsend , ``An assessment of the impact of incorporating
         Time-of-Flight (TOF) into clinical PET/CT imaging'', \textit{J. Nucl.
         Med.}, \textbf{51}, 1315 (2010). 
     
-    \item D.~J. Kadrmas {\em et al.}, ``Impact of Time-of-Flight on PET Tumor
+\item  D.~J. Kadrmas, M.~E. Casey, M. Conti, B.~W. Jakoby, \textbf{C. Lois}, D.~W. Townsend  , ``Impact of Time-of-Flight on PET Tumor
         Detection'', \textit{J. Nucl. Med.}, \textbf{50},  3104 (2009).
   
-   \item AA. Alves {\em et al.} (The LHCb Collaboration), "The LHCb Detector at the LHC", Journal of Instrumentation 3 (2008).
+\item AA. Alves {\em et al.} (The LHCb Collaboration), "The LHCb Detector at the LHC", Journal of Instrumentation 3 (2008).
 \end{itemize}
 
+
+Authored 60+ scientific publications, 10+ as first or last author, and with a total of 3400+ citations.
 
 
 
