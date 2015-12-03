@@ -1,6 +1,8 @@
 \documentclass[letterpaper]{article}
 
-\usepackage{natbib}
+\usepackage[sorting=ydnt]{biblatex}
+\addbibresource{citations.bib}
+%\usepackage{natbib}
 \usepackage{eurosym}
 \usepackage{hyperref}
 \hypersetup{pdftitle={CristinaLoisResume},
@@ -140,7 +142,7 @@ scanner.
 %\item[]
  %   \textbf{University of Santiago de Compostela} \hfill Santiago de
  %   Compostela, Spain
-\\
+% \\
 %    Postdoctoral Research Assistant \hfill \textit{Sep. 2008--Dec 2008}
 %\vspace*{0.5ex}
  %   \\
@@ -272,8 +274,9 @@ Ciencia.\\
 
 \begingroup
 \renewcommand{\section}[2]{}%
-\bibliographystyle{cv}
-\bibliography{citations}
+\printbibliography
+%\bibliographystyle{cv}
+%\bibliography{citations}
 \endgroup
     
 \bloque{Teaching}
