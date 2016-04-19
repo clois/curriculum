@@ -23,7 +23,7 @@
 \setlength{\textwidth}{15cm}
 \setlength{\textheight}{22cm}
 
-\pagestyle{empty}
+%\pagestyle{empty}
 
 \setlength{\unitlength}{1cm}
 
@@ -37,28 +37,31 @@
 }
 
 % Big horizontal line
-\def\blinha{\hlinha{15}}
+\def\blinha{\hlinha{17.8}}
 
 % Algunhas definicions
 \def\bloque#1{\vspace{.0cm}\begin{large} \textbf{#1}\end{large} \blinha}
 %\def\bloque#1{\vspace{.5cm}\begin{large} \textbf{#1}\end{large} \blinha}
 
 \def\nome#1{\begin{center} \begin{Large}\textbf{#1}\end{Large}\end{center}\vspace{0.3cm}}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
 
 \begin{document}
 
+%\nome{\textsc{Cristina Lois}}
 \nome{\textsc{Cristina Lois G\'omez}}
 
 % includes postal address
 \begin{minipage}[t]{0.6\textwidth}
 
-Athinoula A. Martinos Center for Biomedical Imaging \\
-MGH \& Harvard Medical School \\
-Building 149 Room 5022 \\
-Charlestown MA, 02129  \\
+\hspace*{1.3cm} Athinoula A. Martinos Center for Biomedical Imaging \\
+\hspace*{1.3cm} MGH \& Harvard Medical School \\
+\hspace*{1.3cm} Building 149 Room 5022 \\
+\hspace*{1.3cm} Charlestown MA, 02129  \\
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.26\textwidth}
+\begin{minipage}[t]{0.32\textwidth}
     \vfill
 \raggedright phone: (617)-319-3615 \\
 \raggedright email: \href{mailto:clois@mit.edu}{\texttt{clois@mit.edu}}\\
@@ -174,6 +177,8 @@ Postdoctoral Research Associate \hfill \textit{Feb. 2007-- Jul. 2008}
 
 \begin{description}
 
+\item[] M+Vision Advanced Fellowship (declined), Madrid-MIT M+Vision Consortium  \hfill \textit{Aug. 2013}
+
 \item[] M+Vision Fellowship\\
 Madrid-MIT M+Vision Consortium \hfill \textit{Jul. 2012} 
 
@@ -262,6 +267,8 @@ Ciencia.\\
 %\bibliographystyle{cv}
 %\bibliography{citations}
 \endgroup
+
+    \newpage
     
 \bloque{Teaching}
 
